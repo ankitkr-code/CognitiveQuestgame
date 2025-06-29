@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Memory Card Game</title>
+</head>
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display:flex;
+        align-items:end;
+        justify-content: end;
+        height: 100vh;
+    }
+    .title{
+        position: absolute;
+        left:2%;
+        top:5%;
+        align-self: baseline;
+        font-size: 52px;
+        font-family:Kanit;
+        font-weight: 900;
+        background: url(desk.jpg);
+        background-position:center;
+        background-clip: text;
+        color: transparent;
+        
+    }
+    #myVid {
+        z-index: 0;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .tagline{
+        position: absolute;
+        left:10%;
+        top:100%;
+        margin-top: 50px;
+        align-self:baseline ;
+        z-index: 2;
+        border-radius: 50px;
+        height: 150px;
+        width: 600px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .sub{
+        z-index: 1;
+    }
+    .submit {
+        margin-right: 30px;
+        margin-bottom: 20px;
+        padding: 30px;
+        background-color:transparent;
+        font-size: 5rem;
+        font-family: kanit;
+        letter-spacing: 3px;
+        color:white;
+        border: none;
+        font-weight:900;
+        cursor: pointer;
+        transition: color 0.5s,letter-spacing 0.3s, text-shadow 0.6s;
+    }
+    button:hover {
+        color:rgb(2, 188, 255);
+        letter-spacing: 2px;
+        text-shadow: 5px 0px 15px rgb(255, 0, 128);
+        /* text-decoration-line:underline; */
+    }
+    button:active{
+        opacity: 0.55;
+       
+    }
+</style>
+
+
+
+<body>
+    <div class="container">
+        <video autoplay muted loop id="myVid">
+            <source src="bgvid.mp4" type="video/mp4">
+          </video>
+        <div class="title">
+            <h1>' Cogni-Quest '</h1>
+            <div class="tagline">
+
+            </div>
+        </div>
+        
+        <div class="sub">
+            <a href="mem game.html"class="all">
+                <button id="sub" class="submit">Start Game</button>
+            </a> 
+        </div>
+       
+    </div>
+
+</body>

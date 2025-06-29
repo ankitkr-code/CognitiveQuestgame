@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mem game.css">
+    <script src="mem game.js"></script>
+</head>
+
+<body>
+    <div id="container">
+      <h2><span id="errors">Errors: 0</span></h2>
+      <h2><span id="qwerty">1. Try to remember the images in 3 seconds<br>2. Choose the identical pair of cards<br></span></h2>
+      <!-- <div id="noofCards">
+        <select id="sel">
+            <option value="default">4</option>
+            <option value="opt1">5</option>
+            <option value="opt2">6</option>
+        </select>
+      </div> -->
+     <div id="board">
+        <div class="resetBtn">
+            <button onclick="resetGame()"><img src="reload.png" alt="Play Again"></button>
+         </div>
+     </div>
+     
+    </div>
+    <audio id="bell-sound" src="bell2.mp3"></audio>
+    <audio id="buzzer-sound" src="buzzer2.mp3"></audio>
+    <audio id="swipe-sound" src="swipe.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+</body>
+
+</html>
